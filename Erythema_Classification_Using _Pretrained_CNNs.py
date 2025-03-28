@@ -26,7 +26,7 @@ Usage:
 Example:
     python erythema_classification.py
 
-Authors: [Your Name]
+Authors: Miriam Asare- Baiden
 Date: March 2025
 """
 
