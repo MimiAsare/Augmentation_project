@@ -28,7 +28,7 @@ def get_min_max_temperature(original_temperature_folder):
 
     # Load erythema files once
     erythema_files = pd.read_excel(
-        r'/Users/macbookpro/Library/CloudStorage/OneDrive-Emory/SCRG/HIP_Project/ProcessedData/ErythemaImgLabels.xlsx'
+        r'./SCRG/HIP_Project/ProcessedData/ErythemaImgLabels.xlsx'
     )
     erythema_names = erythema_files['Img Name'].str.split('.').str[0]
     
@@ -134,6 +134,6 @@ def compare_images(temperature_folder, normalized_temperature_folder):
                 print(f"Error processing {file}: {e}")
 
 if __name__ == "__main__":
-    original_temp_path = r'./SCRG/HIP_Project/ProcessedData/Separated & Processed Images/temperature_csv/'
+    original_temp_path = r'./SCRG/HIP_Project/ProcessedData/Separated & Processed Images/temperature_csv/' # Update path
     normalized_temp_path = ''# add path to save normalized images
     compare_images(original_temp_path, normalized_temp_path)
