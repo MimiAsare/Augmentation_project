@@ -123,7 +123,7 @@ def compare_images(temperature_folder, normalized_temperature_folder):
                 ax2.axis('off')
                 
                 save_img_path = os.path.join(
-                    '/Users/macbookpro/Library/CloudStorage/OneDrive-Emory/Research_projects/Pressure_injury/Thermography/Phase_2/Normalized_images/',
+                    './Normalized_images/', # Update path
                     f'{actual_filename}.png'
                 )
                 plt.savefig(save_img_path)
